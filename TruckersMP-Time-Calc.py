@@ -10,4 +10,5 @@ real_time_hours = real_time_secs // 60**2
 real_time_mins = round(real_time_secs / 60**2 - real_time_hours, 3) * 60
 
 now = datetime.strptime(f"{round(real_time_hours)}:{round(real_time_mins)}", '%H:%M')
-print(f"\nReal time: {now.strftime('%H:%M')}")
+print(f"Real time: {now.strftime('%H:%M')}")
+input("\n\nPress Enter to exit")
