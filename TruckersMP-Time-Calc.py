@@ -24,6 +24,7 @@ class TimeCalc:
         return now.strftime('%H:%M')
 
 if __name__ == "__main__":
-    dist = int(input("Введите дистацию: "))
-    speed = int(input("Введите скорость: "))
-    print(f"Реальное время: {TimeCalc().dist_speed_to_realtime(dist, speed)}")
+    while True:
+        dist = int(input("Введите дистацию: "))
+        speed = int(input("Введите скорость: "))
+        print(f"Реальное время: {TimeCalc().dist_speed_to_realtime(dist, speed)}")
